@@ -4,7 +4,7 @@ import java.lang.*;
 
 public class Main {
   public static void main(String[] args) {
-    Stack stack = new Stack();
+    Stack<Dish> stack = new Stack<Dish>();
     Dish oneDish = new Dish("A dish with one fish pattern on it");
     Dish twoDish = new Dish("A dish with two fish patterns on it");
     Dish redDish = new Dish("A dish with a red fish pattern on it");

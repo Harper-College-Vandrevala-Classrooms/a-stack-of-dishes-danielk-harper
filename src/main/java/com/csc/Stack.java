@@ -2,24 +2,24 @@ package com.csc;
 
 import java.util.*;
 
-class Stack {
-  ArrayList<Dish> stack;
+class Stack<T> {
+  ArrayList<T> stack;
   
   public Stack() {
-    stack = new ArrayList<Dish>();
+    stack = new ArrayList<T>();
   }
   
-  public void push(Dish newDish) {
-    stack.add(newDish);
+  public void push(T newElem) {
+    stack.add(newElem);
   }
   
-  public Dish pop() {
-    Dish ret = peek();
+  public T pop() {
+    T ret = peek();
     stack.remove(stack.size() - 1);
     return ret;
   }
   
-  public Dish peek() {
+  public T peek() {
     return stack.get(stack.size() - 1);
   }
   
